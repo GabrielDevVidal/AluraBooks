@@ -1,0 +1,157 @@
+.carrossel__titulo{
+    color: var(--amarelo);
+    font-family: var(--fonte);
+    font-weight: 700;
+    background-color: var(--branco-terciario);
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev{
+    display: none;
+}
+.swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0em;
+}
+.card{
+    background-color: var(--branco-terciario);
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    border-radius: 16px;
+    padding-bottom: 0.5em;
+
+}
+.card-left, .card-right{
+    margin: 1em 1em;
+    
+    
+}
+.botões{
+    display: flex;
+    gap: 1em;
+    
+
+}
+
+.card__titulo{
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--amarelo);
+    text-align: left;
+    font-size: 1rem;
+
+    
+}
+.card__subtitulo{
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 1.125rem;
+    margin: .7em 0em;
+}
+.card__texto{
+    font-size: 0.875rem;
+    margin-bottom: 1em;
+    
+}
+.card-right-img{
+    margin-bottom: 3em;
+}
+.card-right__botao{
+    background-color: var(--amarelo);
+    text-decoration: none;
+    color: var(--branco-terciario);
+    padding: 0.5em 2.3em;
+    
+
+}
+.card__estrelas{
+    margin-bottom: .5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        padding-top: 2em;
+        font-size: 26px;
+    }
+    .swiper{
+        margin: 0em 7em;
+        margin-top: 4em;
+        
+    }
+    .swiper-slide img{
+        width: 80%;
+        
+    }
+    
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 55%;
+    }
+    .card{
+        margin: 3em 13.25em;
+
+    }
+    .card__texto{
+        margin-bottom: 0;
+    }
+    .botões{
+        margin-top: 6em;
+    
+    }
+    .card__texto{
+        font-size: 1rem;
+    
+    }
+    .card-right-img{
+        margin-bottom: 1.5em;
+    }
+    .card-left, .card-right{
+        margin: 1em 1em;
+        
+        
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .carrossel__card{
+        display: flex;
+        align-items: center;
+        margin: 0 5vw 0 5vw;
+        
+    }
+    .swiper-slide img{
+        width: 100%;
+        
+    }
+    .swiper-pagination{
+        margin: 0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .card{
+        width: 60%;
+        margin-top:6em;
+    }
+    .card__titulo{
+        font-size: 32px;
+    }
+    .card__texto{
+        font-size: 16px;
+    }
+    .botões{
+        margin-top: 2em;
+    }
+}
